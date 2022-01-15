@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="/main.css">
 <div class="cb343dfc4cd85402fa4078d3a3d93623a" id="cb343dfc4cd85402fa4078d3a3d93623a">
     <!-- Write your code here -->
         <div class="container">
@@ -33,4 +32,3 @@
         </div>
     <!-- Write your code here -->
 </div>
-<script src="/main.js"></script>

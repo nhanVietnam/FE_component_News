@@ -1,4 +1,3 @@
-import "./index.scss";
 const uuid = "cb343dfc4cd85402fa4078d3a3d93623a";
 // Write your code here
 console.log("Hello World!");

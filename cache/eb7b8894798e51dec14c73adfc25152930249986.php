@@ -15,22 +15,22 @@
             </div>
             <div class="cb343dfc4cd85402fa4078d3a3d93623a__main" data-aos="fade-up">
                 <ul class="cb343dfc4cd85402fa4078d3a3d93623a__list">
-                    @foreach(json_decode($articles) as $article)
+                    <?php $__currentLoopData = json_decode($articles); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $article): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                         <li class="cb343dfc4cd85402fa4078d3a3d93623a__item">
                             <a class="cb343dfc4cd85402fa4078d3a3d93623a__item__link" href="#">
                                <div class="cb343dfc4cd85402fa4078d3a3d93623a__item__image">
-                                   <img src="{{$article->thumbnail}}" alt="">
+                                   <img src="<?php echo e($article->thumbnail); ?>" alt="">
                                </div>
                                <div class="cb343dfc4cd85402fa4078d3a3d93623a__item__main">
-                                   <p class="cb343dfc4cd85402fa4078d3a3d93623a__item__date">{{$article->created_at}}</p>
-                                   <h4 class="cb343dfc4cd85402fa4078d3a3d93623a__item__title">{{$article->title}}</h4>
+                                   <p class="cb343dfc4cd85402fa4078d3a3d93623a__item__date"><?php echo e($article->created_at); ?></p>
+                                   <h4 class="cb343dfc4cd85402fa4078d3a3d93623a__item__title"><?php echo e($article->title); ?></h4>
                                </div>
                            </a>
                        </li>
-                    @endforeach
+                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                 </ul>
             </div>
         </div>
     <!-- Write your code here -->
 </div>
-<script src="/main.js"></script>
+<script src="/main.js"></script><?php /**PATH /home/lethanhnhan/project/component-php/news/src/index.blade.php ENDPATH**/ ?>
